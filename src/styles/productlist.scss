@@ -1,0 +1,241 @@
+@import "./reset.scss";
+@import "./headfoot.scss";
+$cen:1280px;
+.mid{
+    .ico-comm{
+        background: url(https://js01.daoju.qq.com/zb/mall/v2/images/ico-comm.png) no-repeat;
+    }
+    width: $cen;
+    margin: 0 auto;
+    .breab{
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        color: #999;
+        .breb-first{
+            color: #333;
+            margin-right:5px;
+        }
+    }
+    .page-main{
+        .list-filter{
+            margin-bottom: 10px;
+            padding: 12px 50px 0;
+            background: #fff;
+            .cur{
+                color: #333;
+                font-weight: bold;
+            }
+            #showip{
+                position: relative;
+                width: 100%;
+                padding: 11px 0;
+                max-height: 90px;
+                border-bottom: 1px solid #eee;
+                overflow: hidden;
+                -webkit-transition: all .4s linear;
+                transition: all .4s linear;
+                dl{
+                    width: 1115px;
+                    height: auto;
+                    font-size: 14px;
+                    dt{
+                        float: left;
+                        color: #999;
+                        line-height: 30px;
+                    }
+                    dd{
+                        float: left;
+                        padding: 0 20px;
+                        color: #666;
+                        line-height: 30px;
+                        cursor: pointer;
+                    }
+                }
+                .btn-filter{
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    z-index: 2;
+                    font-size: 14px;
+                    color: #666;
+                    cursor: pointer;
+                    i{
+                        display: inline-block;
+                        width: 8px;
+                        height: 6px;
+                        background-position: -79px -64px;
+                        vertical-align: middle;
+                        background: url(https://js01.daoju.qq.com/zb/mall/v2/images/ico-comm.png) no-repeat
+                    }
+                }
+            }
+            .sort-filter{
+                @extend #showip;
+                border-bottom: none;
+                dt{
+                    float: left;
+                    color: #999;
+                    line-height: 30px;
+                }
+                dd{
+                    float: left;
+                    padding: 0 20px;
+                    color: #666;
+                    line-height: 30px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .goods-list{
+        padding-top: 40px;
+        padding-bottom: 20px;
+        background: #fff;
+        ul{
+            margin-left: 40px;
+            width: 1208px;
+            height: auto;
+            list-style: none;
+        }
+        li{
+            margin: 0 10px 20px;
+            float: left;
+            width: 280px;
+            height: 356px;
+            border: 1px solid #eee;
+            position: relative;
+            z-index: 1;
+            -webkit-transition: all .2s linear;
+            transition: all .2s linear;
+            overflow: hidden;
+                &:hover{
+						-webkit-box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+						box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+						-webkit-transform: translate3d(0, -2px, 0);
+						transform: translate3d(0, -2px, 0);
+                }
+            .i-mark{
+                position: absolute;
+                top: -1px;
+                right: 20px;
+                z-index: 10;
+                padding: 0 10px 7px;
+                width: 28px;
+                height: 40px;
+                background-position: -279px -85px;
+                font-size: 14px;
+                color: #333;
+                text-align: center;
+                font-weight: bold;
+                display: table;
+                .mark-txt{
+                    display: table-cell;
+                    vertical-align: middle;
+                    text-align: center;
+                    line-height: 14px;
+                }
+            }
+            img{
+                width: 280px;
+                height: 268px;
+                display: block;
+            }
+            .good-info{
+                margin-top: 18px;
+                text-align: center;
+                overflow: hidden;
+                .good-name{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    line-height: 24px;
+                    font-size: 14px;
+                    color: #444;
+                }
+                .good-pri{
+                    line-height: 25px;
+                    font-size: 16px;
+                    color: #f7545f;
+                    .old-pri{
+                        padding-left: 8px;
+                        font-size: 14px;
+                        color: #999;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+    }
+    .pagewth{
+        margin-left: 47px;
+        width: 1180px;
+    }
+    .page{
+        text-align: left;
+        padding: 30px 0;
+        height: 38px;
+        font-size: 16px;
+        position: relative;
+        .active a{
+            background: #f3bf19;
+            border-color: #f3bf19;
+        }
+        .ico-arrright{
+            background-position: -429px -345px;
+            margin: 9px auto;
+            display: block;
+            width: 10px;
+            height: 18px;
+        }
+        a{
+            line-height: 38px;
+            display: inline-block;
+            width: 38px;
+            height: 38px;
+            background: #fff;
+            border: 1px solid #eee;
+            text-align: center;
+            margin-left: 4px;
+            color: #5e6360;
+            cursor: pointer;
+            &:hover{
+                border-color: #f3bf19;
+            }
+        }
+        .p_next{
+            position: absolute;
+            top: 30px;
+            right: 0;
+            a{
+                width: 40px;
+            }
+        }
+        .p_prev{
+            position: absolute;
+            top:30px;
+            right:50px;
+            a{
+                width: 40px;
+                line-height: 38px;
+                display: inline-block;
+                width: 38px;
+                height: 38px;
+                background: #fff;
+                text-align: center;
+                margin-left: 4px;
+                color: #5e6360;
+                .ico-arrleft{
+                    background-position: -411px -345px;
+                    margin: 9px auto;
+                    display: block;
+                    width: 10px;
+                    height: 18px;
+                }
+            }
+        }
+    }
+}
+.ico-center{
+    background: url(https://js01.daoju.qq.com/zb/mall/v2/images/ico_center.png) no-repeat;
+}

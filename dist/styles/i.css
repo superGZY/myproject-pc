@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.box {
+  font-size: 60px;
+  border-top: 120px;
+  margin-top: 120px;
+}
+
+.container .row .col .item {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.page {
+  width: 10px;
+  height: 20px;
+}
+
+/*可以写注释，但是生成CSS的时候，单行注释不会出现*/
+.container .row .col {
+  position: relative;
+}
+
+.container .row .col .item {
+  height: 200px;
+  background: salmon;
+}
+
+.container .row .col .item ul {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.container .row .col .item ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.container .row .col .item ul li a:hover {
+  color: red;
+}

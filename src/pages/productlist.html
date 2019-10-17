@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../styles/productlist.css" />
+    <script src="../static/scripts/require.js" data-main="../scripts/commen/productlist.js" type="text/javascript"
+        charset="utf-8"></script>
+</head>
+
+<body>
+    <!-- top-S -->
+    <div id="topWrap" class="toprelative">
+        <!-- topbar-S -->
+        <div id="topbar" class="container">
+            <a href="./index.html" target="_blank">
+                <div class="fl ico-topbar logol">聚诚品</div>
+            </a>
+            <div class="fl ico-topbar logor">可以触摸的欢乐时光</div>
+            <a href="buycar.html" target="_blank" class="fr buycar">
+                <i class="fl buycar-ico ico-topbar"></i>
+                <span>购物车</span>
+                <div class="fr buycar-num">0</div>
+            </a>
+            <div class="loginbar fr">
+                <!-- 未登录状态 -->
+                <div class="unlogin">
+                    <i class="ico-topbar i-person"></i>
+                    <a href="javascript:void(0)" id="login">立即登录</a>
+                </div>
+            </div>
+            <div class="searchbox fr">
+                <a href="" class="ico-topbar"></a>
+                <input placeholder="请输入想要查找的宝贝" />
+            </div>
+        </div>
+        <!-- topbar-E -->
+        <!-- topnav-S -->
+        <div id="topnavWrap">
+            <div class="container topnav-c">
+                <ul class="fl">
+                    <li><a class="ico-topbar" href="index.html">首页</a></li>
+                    <li><a class="ico-topbar" href="">限时折扣</a></li>
+                    <li><a class="ico-topbar" href="">聚豆抵扣</a></li>
+                    <li><a class="ico-topbar" href="">定制专区</a></li>
+                    <li><a class="ico-topbar" href="">聚发现</a></li>
+                </ul>
+                <a class="fr">
+                    <span>全部商品分类</span>
+                    <i class="allgoods-down ico-topbar"></i>
+                </a>
+            </div>
+        </div>
+        <!-- top-meun-S -->
+        <div class="top-menu" style="display: none;">
+            <div class="allgoods-info container">
+                <ul class="allgoods-ul">
+                    <li class="menu-li">
+                        <a class="menua-header">
+                            <img
+                                src="https://game.gtimg.cn/images/zb/x5/uploadImg/goods/201805/20180509175902_45069.png" />
+                            <p>服饰鞋帽</p>
+                        </a>
+                        <ul>
+                            <li><a href="">卫衣/外套</a></li>
+                            <li><a href="">卫衣/外套</a></li>
+                            <li><a href="">卫衣/外套</a></li>
+                            <li><a href="">卫衣/外套</a></li>
+                            <li><a href="">卫衣/外套</a></li>
+                            <li><a href="">卫衣/外套</a></li>
+                            <li><a href="">卫衣/外套</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- top-E -->
+    <!-- mid-S -->
+    <div class="mid">
+        <div class="breab">
+            <span class="breb-first">首页&gt;</span><span>分类</span>
+        </div>
+        <div class="page-main">
+            <!-- pro-list-S -->
+            <div class="list-filter">
+                <div id="showip">
+                    <dl class="dj_ipclass_ul">
+                        <dt>游戏/动漫:</dt>
+                        <dd>全部</dd>
+                    </dl>
+                    <a class="btn-filter filter-sq">
+                        <span>收起</span>
+                        <i></i>
+                    </a>
+                </div>
+                <div class="sort-filter">
+                    <div class="fl">
+                        <dt>排序:</dt>
+                        <dd class="cur">默认</dd>
+                        <dd>价格</dd>
+                        <dd>价格</dd>
+                        <dd>价格</dd>
+                        <dd>价格</dd>
+                    </div>
+                    <div class="fr">
+                        <dt>筛选:</dt>
+                        <dd>价格</dd>
+                        <dd>价格</dd>
+                        <dd>价格</dd>
+                    </div>
+                </div>
+            </div>
+            <!-- 商品列表 -->
+            <div class="goods-list clearfix">
+                <ul id="dj_goods_ul" class="clearfix"> </ul>
+                <!-- 分页按钮 -->
+                <div class="page pagesmar pagewth" id="page_wrapper">
+                    <span class="p_prev"><a><i class="ico-center ico-arrleft"></i></a></span>
+                    <span class="page_btn active"><a page="1">1</a></span>
+                    <span class="page_btn"><a page="2">2</a></span>
+                    <span class="page_btn"><a page="3">3</a></span>
+                    <span class="page_btn"><a page="4">4</a></span>
+                    <span class="page_btn"><a page="5">5</a></span>
+                    <span class="p_next"><a><i class="ico-center ico-arrright"></i></a></span>
+                </div>
+            </div>
+            
+        </div>
+        <!-- pro-list-E -->
+        
+    </div>
+    <!-- min-E -->
+    <!-- footer-S -->
+    <div class="footer">
+        <div class="container">
+            <a href="" class="footer-logo"><img src="../static/images/djc_logo.png" /></a>
+            <ul class="footer-infol fl">
+                <li><a><span class="commtop"></span>购物指南</a></li>
+                <li><a><span class="commtop"></span>购物指南</a></li>
+                <li><a><span class="commtop"></span>购物指南</a></li>
+                <li><a><span class="commtop"></span>购物指南</a></li>
+                <li><a><span class="commtop"></span>购物指南</a></li>
+            </ul>
+            <ul class="footer-infor fl">
+                <li>
+                    <img src="../static/images/djc_gzh.jpg" />
+                    <p>聚诚品公众号</p>
+                </li>
+                <li>
+                    <img src="../static/images/djc_gzh.jpg" />
+                    <p>聚诚品公众号</p>
+                </li>
+                <li class="last-wx">
+                    <img src="../static/images/djc_gzh.jpg" />
+                    <p>聚诚品公众号</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bot">
+        <p>
+            <a href="">腾讯互动娱乐</a>
+            |
+            <a href="">服务条款</a>
+            |
+            <a href="">腾讯游戏隐私保护指引</a>
+            |
+            <a href="">广告服务</a>
+            |
+            <a href="">腾讯游戏招聘</a>
+            |
+            <a href="">腾讯游戏客服</a>
+            |
+            <a href="">游戏地图</a>
+            |
+            <a href="">成长守护平台</a>
+            |
+            <a href="">商务合作</a>
+            |
+            <a href="">网站导航</a>
+        </p>
+        <p>COPYRIGHT © 1998 – 2019 TENCENT. ALL RIGHTS RESERVED.</p>
+        <p><a href="">腾讯公司 版权所有</a></p>
+    </div>
+</body>
+
+</html>

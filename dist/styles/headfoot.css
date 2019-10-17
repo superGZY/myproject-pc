@@ -1,0 +1,835 @@
+@charset "UTF-8";
+body {
+  background-color: #F5F5F5;
+  font-size: 16px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.ico-topbar {
+  background: url(../static/images/ico-comm.png) no-repeat;
+}
+
+.commtop {
+  background: url(../static/images/comm-top.png) no-repeat;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.toprelative {
+  width: 100%;
+  height: 156px;
+  left: 0;
+  top: 0;
+  background: #000;
+  position: relative;
+}
+
+.topfixed {
+  position: fixed;
+  z-index: 200;
+  height: 115px;
+  animation: mymove .5s forwards;
+  -webkit-animation: mymove .5s forwards;
+}
+
+.topfixed #topbar {
+  height: 66px;
+}
+
+.topfixed #topbar .logol {
+  width: 114px;
+  height: 52px;
+  margin: 7px 0 0 10px;
+  background-position: -1px -150px;
+}
+
+.topfixed #topbar .logor {
+  margin-top: 18px;
+}
+
+.topfixed #topbar .searchbox {
+  margin-top: 13px;
+}
+
+.topfixed #topbar .buycar {
+  margin-top: 21px;
+}
+
+.topfixed #topbar .loginbar {
+  margin-top: 12px;
+  height: 52px;
+}
+
+.topfixed #topnavWrap .topnav-c {
+  height: 48px;
+}
+
+.topfixed #topnavWrap .topnav-c ul li {
+  line-height: 48px;
+}
+
+.topfixed #topnavWrap .topnav-c ul li a {
+  font-size: 14px;
+}
+
+.topfixed #topnavWrap .topnav-c ul li a:hover {
+  background-position: -28px -100px;
+}
+
+.topfixed #topnavWrap .topnav-c #topmenu-goods {
+  line-height: 48px;
+  font-size: 14px;
+}
+
+.topfixed #topnavWrap .topnav-c #topmenu-goods span {
+  line-height: 48px;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes mymove {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+#topbar {
+  height: 99px;
+}
+
+#topbar .logol {
+  width: 158px;
+  height: 60px;
+  margin: 18px 0 0 10px;
+  background-position: -168px -189px;
+  text-indent: -9999em;
+  cursor: pointer;
+}
+
+#topbar .logor {
+  width: 172px;
+  height: 34px;
+  margin: 38px 0 0 10px;
+  background-position: 0 -28px;
+  text-indent: -9999em;
+}
+
+#topbar .buycar {
+  display: block;
+  margin-top: 47px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #f6f7ef;
+}
+
+#topbar .buycar .buycar-ico {
+  margin-right: 7px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: -2px -63px;
+}
+
+#topbar .buycar .buycar-num {
+  height: 24px;
+  color: #ffc933;
+}
+
+#topbar .loginbar {
+  margin-top: 39px;
+  margin-right: 40px;
+  height: 60px;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+#topbar .loginbar .unlogin, #topbar .loginbar .login {
+  margin-left: 43px;
+}
+
+#topbar .loginbar .unlogin .i-person, #topbar .loginbar .login .i-person {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background-position: 0 -279px;
+  vertical-align: middle;
+  margin-top: -2px;
+}
+
+#topbar .loginbar .unlogin a, #topbar .loginbar .login a {
+  color: #f6f7ef;
+}
+
+#topbar .loginbar .login {
+  position: relative;
+  height: 200px;
+  cursor: pointer;
+}
+
+#topbar .loginbar .login .top-hover {
+  position: absolute;
+  top: 54px;
+  left: -50px;
+  z-index: 100;
+  width: 132px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+#topbar .loginbar .login .top-hover .arrow {
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  margin-left: -9px;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+
+#topbar .loginbar .login .top-hover .link-list {
+  margin-top: 11px;
+}
+
+#topbar .loginbar .login .top-hover .link-list i {
+  margin: 9px 9px 0 23px;
+  width: 15px;
+  height: 17px;
+  display: block;
+  background: url(https://js01.daoju.qq.com/zb/mall/v2/images/ico-comm.png) no-repeat;
+}
+
+#topbar .loginbar .login .top-hover .link-list a {
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+#topbar .loginbar .login .top-hover .link-list a .link-i1 {
+  background-position: -162px -2px;
+}
+
+#topbar .loginbar .login .top-hover .link-list a .link-i2 {
+  background-position: -132px -3px;
+}
+
+#topbar .loginbar .login .top-hover .link-list a .link-i3 {
+  background-position: -114px -2px;
+}
+
+#topbar .loginbar .login .top-hover .link-list a .link-i4 {
+  background-position: -132px -3px;
+}
+
+#topbar .loginbar .login .top-hover .link-list a .link-i5 {
+  background-position: -95px -64px;
+}
+
+#topbar .loginbar .login .top-hover .link-list a .link-i6 {
+  background-position: -119px -64px;
+}
+
+#topbar .loginbar .login .top-hover .link-list a .link-i7 {
+  margin-top: 13px;
+  background-position: -28px -64px;
+}
+
+#topbar .loginbar .login .top-hover .link-list .quit {
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #f1f1f1;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+#topbar .searchbox {
+  margin: 39px 20px 0 0;
+  width: 240px;
+  height: 40px;
+  background: #242424;
+  border-radius: 20px;
+  position: relative;
+}
+
+#topbar .searchbox a {
+  width: 16px;
+  height: 17px;
+  position: absolute;
+  top: 12px;
+  left: 11px;
+  background-position: -80px -3px;
+}
+
+#topbar .searchbox input {
+  width: 205px;
+  height: 40px;
+  margin-left: 33px;
+  background: none;
+  border: none;
+  line-height: 40px;
+  color: #fff;
+  outline: none;
+}
+
+#topnavWrap {
+  width: 100%;
+  height: 56px;
+  border-top: 1px solid #222;
+}
+
+#topnavWrap .topnav-c {
+  height: 56px;
+}
+
+#topnavWrap .topnav-c ul {
+  height: 100%;
+}
+
+#topnavWrap .topnav-c ul li {
+  float: left;
+  width: 129px;
+  height: 100%;
+  line-height: 56px;
+}
+
+#topnavWrap .topnav-c ul li a {
+  color: #a6a6a6;
+  text-align: center;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+#topnavWrap .topnav-c a {
+  cursor: pointer;
+  background-position: 130px 56px;
+}
+
+#topnavWrap .topnav-c a span {
+  line-height: 56px;
+  color: #fff;
+}
+
+#topnavWrap .topnav-c a .allgoods-down {
+  margin-left: 7px;
+  display: inline-block;
+  width: 10px;
+  height: 12px;
+  background-position: -100px -2px;
+}
+
+#topnavWrap .topnav-c a:hover {
+  background-position: -28px -92px;
+}
+
+#topnavWrap .topnav-c a:hover .allgoods-down {
+  background-position: -66px -2px;
+}
+
+.top-menu {
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  z-index: 10;
+}
+
+.top-menu .allgoods-ul {
+  margin: 25px 140px 0;
+  padding-bottom: 20px;
+}
+
+.top-menu .allgoods-ul .menu-li {
+  padding: 0 10px;
+  width: 80px;
+  text-align: center;
+  float: left;
+}
+
+.top-menu .allgoods-ul .menu-li .menua-header {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-bottom: 4px solid #e3e3e3;
+}
+
+.top-menu .allgoods-ul .menu-li .menua-header img {
+  padding-bottom: 20px;
+}
+
+.top-menu .allgoods-ul .menu-li .menua-header p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 18px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.top-menu .allgoods-ul .menu-li ul li {
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.top-menu .allgoods-ul .menu-li ul li a {
+  color: #333;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 40px;
+  background: #1B1B1B;
+  font-size: 12px;
+  line-height: 24px;
+  color: #777;
+}
+
+.footer a {
+  cursor: pointer;
+}
+
+.footer .container {
+  border-bottom: 1px solid #606060;
+  overflow: hidden;
+  position: relative;
+}
+
+.footer .container .footer-logo {
+  width: 213px;
+  height: 64px;
+  position: absolute;
+  top: 51px;
+  left: 80px;
+}
+
+.footer .container .footer-logo img {
+  display: block;
+  width: 169px;
+  height: 60px;
+}
+
+.footer .container .footer-infol {
+  height: 135px;
+  width: 395px;
+  margin: 50px 0 0 317px;
+  border-left: 1px solid #606060;
+  border-right: 1px solid #606060;
+}
+
+.footer .container .footer-infol li {
+  width: 118px;
+  height: 55px;
+  padding: 0 38px;
+  float: left;
+}
+
+.footer .container .footer-infol li a {
+  color: #a8a8a8;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.footer .container .footer-infol li a span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 9px;
+  background-position: 0 -61px;
+  vertical-align: top;
+}
+
+.footer .container .footer-infol li a:hover {
+  color: #fff;
+}
+
+.footer .container .footer-infor {
+  line-height: 62px;
+  padding: 50px 0 20px 33px;
+}
+
+.footer .container .footer-infor li {
+  margin: 0 45px;
+  float: left;
+}
+
+.footer .container .footer-infor li img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+.footer .container .footer-infor li p {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer .container .footer-infor .last-wx {
+  margin-right: 0;
+}
+
+.footer-bot {
+  width: 100%;
+  height: 72px;
+  padding: 30px 0 40px 0;
+  background: #1B1B1B;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.footer-bot a {
+  cursor: pointer;
+}
+
+.footer-bot p {
+  text-align: center;
+}
+
+.footer-bot p a {
+  color: #777;
+}
+
+.footer-bot p a:hover {
+  color: #fff;
+}
+
+/*登录窗*/
+#logwindow {
+  width: 622px;
+  height: 500px;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -311px;
+  margin-top: -250px;
+  z-index: 999;
+}
+
+#logwindow .logwin-top {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #e6e6e6;
+  background: #f1f1f1;
+  margin-bottom: -1px;
+}
+
+#logwindow .logwin-top ul {
+  height: 50px;
+  position: relative;
+}
+
+#logwindow .logwin-top ul li {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+}
+
+#logwindow .logwin-top ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+#logwindow .logwin-top ul li i {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: top;
+  margin-top: 12px;
+}
+
+#logwindow .logwin-top ul li .qqlog {
+  background: #31a4f6;
+  color: #fff;
+}
+
+#logwindow .logwin-top ul li .qqlog i {
+  width: 20px;
+  height: 23px;
+  background-position: -200px -90px;
+}
+
+#logwindow .logwin-top ul li .qqunlog {
+  color: #b1b1b1;
+  background: none;
+}
+
+#logwindow .logwin-top ul li .qqunlog i {
+  width: 20px;
+  height: 23px;
+  background-position: -180px -90px;
+}
+
+#logwindow .logwin-top ul li .wxunlog i {
+  width: 24px;
+  height: 23px;
+  background-position: -220px -90px;
+}
+
+#logwindow .logwin-top ul li .wxlog i {
+  width: 24px;
+  height: 23px;
+  background-position: -250px -90px;
+}
+
+#logwindow .logwin-top ul li .logimg {
+  background: url(../static/images/sprite_login.png);
+}
+
+#logwindow .logwin-top ul .log-close {
+  position: absolute;
+  display: block;
+  width: 47px;
+  height: 28px;
+  top: 1px;
+  right: 1px;
+  cursor: pointer;
+  background: url(https://vm.gtimg.cn/tencentvideo/vstyle/web/common/style/img/login/sprite_login.png?d=0210&max_age=31104000) 0 0 no-repeat;
+}
+
+#logwindow .logwin-tips {
+  width: 602px;
+  height: 22px;
+  padding: 12px 10px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #a2a2a2;
+  text-align: center;
+}
+
+#logwindow .log-qq-title {
+  font-size: 20px;
+  color: #333;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+#logwindow .log-qq-tips1 {
+  text-align: center;
+  color: #666;
+  margin-bottom: 36px;
+}
+
+#logwindow .log-qq-tips1 a {
+  color: #3481cf;
+}
+
+#logwindow .log-qq-tips1 a:hover {
+  text-decoration: underline;
+}
+
+#logwindow .logwin-con-qq, #logwindow .logwin-con-wx {
+  width: 100%;
+  height: 330px;
+}
+
+#logwindow .logwin-con-qq .log-qq-img, #logwindow .logwin-con-wx .log-qq-img {
+  text-align: center;
+}
+
+#logwindow .logwin-con-qq .log-qq-img img, #logwindow .logwin-con-wx .log-qq-img img {
+  width: 82px;
+  height: 82px;
+  border: 1px solid #D3D3D3;
+}
+
+#logwindow .logwin-con-qq .log-wx-title, #logwindow .logwin-con-wx .log-wx-title {
+  text-align: center;
+  font-size: 20px;
+  color: #373737;
+}
+
+#logwindow .logwin-con-qq .log-wx-img, #logwindow .logwin-con-wx .log-wx-img {
+  text-align: center;
+}
+
+#logwindow .logwin-con-qq .log-wx-img img, #logwindow .logwin-con-wx .log-wx-img img {
+  width: 280px;
+  margin-top: 15px;
+  border: 1px solid #E2E2E2;
+}
+
+#logwindow .logwin-bottom {
+  width: 612px;
+  height: 16px;
+  margin-bottom: 8px;
+  text-align: right;
+  padding-right: 10px;
+  color: #666;
+  font-size: 12px;
+}
+
+#logwindow .logwin-bottom a {
+  cursor: pointer;
+}
+
+#logwindow .logwin-bottom a:hover {
+  text-decoration: underline;
+}
+
+#logwindow .logwin-wx-bottom {
+  text-align: center;
+  font-size: 13px;
+}
+
+#logwindow .log-qq-tips1 a {
+  cursor: pointer;
+}
+
+#logwindow .logwin-con-np .logform {
+  width: 272px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#logwindow .logwin-con-np .logform .error-tips {
+  position: absolute;
+  width: 258px;
+  height: 18px;
+  z-index: 1000;
+  top: -34px;
+  left: 5px;
+}
+
+#logwindow .logwin-con-np .logform .error-tips .error-logo {
+  position: absolute;
+  left: 3px;
+  height: 18px;
+  line-height: 18px;
+  width: 18px;
+  vertical-align: top;
+  background: url(http://imgcache.qq.com/ptlogin/v4/style/40/images/icon_3_tiny.png) 0 -162px no-repeat;
+}
+
+#logwindow .logwin-con-np .logform .error-tips .error-m {
+  display: inline-block;
+  padding-left: 24px;
+  line-height: 18px;
+  color: #ff3b30;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 12px;
+}
+
+#logwindow .logwin-con-np .border {
+  width: 272px;
+  height: 42px;
+  background: url(../static/images/icon_3_tiny.png) -1px -1px no-repeat;
+}
+
+#logwindow .logwin-con-np .border input {
+  width: 258px;
+  position: relative;
+  top: 2px;
+  left: 2px;
+  height: 18px;
+  padding: 10px 0 10px 10px;
+  border: none;
+  background: 0 0;
+  color: #000;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+#logwindow .logwin-con-np .border input::-webkit-input-placeholder {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+#logwindow .logwin-con-np .border input::-moz-input-placeholder {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+#logwindow .logwin-con-np .border input::-ms-input-placeholder {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+#logwindow .logwin-con-np .border .uin-del {
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  background: url(http://imgcache.qq.com/ptlogin/v4/style/40/images/icon_3_tiny.png) -116px -160px no-repeat;
+}
+
+#logwindow .logwin-con-np .focus-border {
+  background: url(../static/images/icon_3_tiny.png) -1px -45px no-repeat;
+}
+
+#logwindow .logwin-con-np .inp-name, #logwindow .logwin-con-np .inp-pwd {
+  height: 55px;
+  position: relative;
+}
+
+#logwindow .logwin-con-np .submit {
+  position: relative;
+  height: 40px;
+  background-color: #86ce2f;
+}
+
+#logwindow .logwin-con-np .submit div {
+  width: 100%;
+  height: 40px;
+  line-height: 35px;
+  text-align: center;
+  border: none;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "Microsoft Yahei","微软雅黑",SimHei,"黑体","Hiragino Sans GB",STHeiTi,sans-serif;
+  color: #fff;
+  background: 0 0;
+  cursor: pointer;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background: #000;
+  opacity: .5;
+  z-index: 998;
+}

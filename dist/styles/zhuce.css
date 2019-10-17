@@ -1,0 +1,252 @@
+body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #666666;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  text-align: left;
+}
+
+select {
+  font-size: 12px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+fieldset, img {
+  border: 0 none;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+address, caption, em, strong, th, i {
+  font-style: normal;
+  font-weight: 400;
+}
+
+hr {
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #E4E4E4;
+  border-width: 1px 0;
+  clear: both;
+  height: 2px;
+  margin: 5px 0;
+  overflow: hidden;
+}
+
+ol, ul {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: #000;
+}
+
+.logo {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: url(https://4.url.cn/zc/v3/img/logo@2x.png) no-repeat;
+  background-size: 36px 43px;
+  z-index: 2;
+  height: 43px;
+  line-height: 43px;
+  padding-left: 46px;
+  margin-left: 30px;
+  margin-top: 18px;
+  font-size: 36px;
+  display: block;
+  color: #000;
+}
+
+.side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 480px;
+  float: left;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://4.url.cn/zc/v3/img/01-3.jpg);
+}
+
+.mainWrap {
+  position: relative;
+  margin-left: 480px;
+  height: 100%;
+}
+
+.mainWrap .main {
+  position: absolute;
+  padding-bottom: 10px;
+  top: 100px;
+  width: 100%;
+}
+
+.mainWrap .main .form {
+  position: relative;
+  width: 480px;
+  margin: 0 auto;
+  min-height: 200px;
+}
+
+.mainWrap .main .form .welcome {
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.mainWrap .main .form .free-entry {
+  float: right;
+  font-size: 24px;
+  margin-bottom: 64px;
+  text-decoration: none;
+  color: #359eff;
+}
+
+.mainWrap .main .form .header {
+  font-size: 28px;
+  margin-bottom: 64px;
+  line-height: 1.2;
+  color: #333;
+}
+
+.mainWrap .main form {
+  transition: all .2s;
+}
+
+.mainWrap .main form input {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.mainWrap .main form input::-webkit-input-placeholder {
+  color: #aaa;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.mainWrap .main form input::-moz-input-placeholder {
+  color: #aaa;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.mainWrap .main form #name {
+  width: 438px;
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid #ff5b5b;
+  border-radius: 4px;
+}
+
+.mainWrap .main form #name:focus {
+  border-color: #549df8;
+}
+
+.mainWrap .main form .error-tips {
+  background: url(https://4.url.cn/zc/v3/img/error.png) no-repeat;
+  background-image: -webkit-image-set(url(https://4.url.cn/zc/v3/img/error.png) 1x, url(https://4.url.cn/zc/v3/img/error@2x.png) 2x);
+  background-image: image-set("https://4.url.cn/zc/v3/img/error.png" 1x, "https://4.url.cn/zc/v3/img/error@2x.png" 2x);
+  padding: 0 0 0 24px;
+  font-size: 14px;
+  line-height: 18px;
+  height: 18px;
+  overflow: hidden;
+  margin-top: 6px;
+  bottom: 0;
+  transition: all .2s;
+  color: #ff5b5b;
+}
+
+.mainWrap .main form #pwd {
+  margin-top: 24px;
+  width: 438px;
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid #ff5b5b;
+  border-radius: 4px;
+  transition: all .2s;
+}
+
+.mainWrap .main form #pwd:focus {
+  border-color: #549df8;
+}
+
+.mainWrap .main form .password-tips-group {
+  height: 78px;
+  overflow: hidden;
+}
+
+.mainWrap .main form .password-tips-group .password-tips {
+  background: url(https://4.url.cn/zc/v3/img/info.png) no-repeat;
+  background-image: -webkit-image-set(url(https://4.url.cn/zc/v3/img/info.png) 1x, url(https://4.url.cn/zc/v3/img/info@2x.png) 2x);
+  background-image: image-set("https://4.url.cn/zc/v3/img/info.png" 1x, "https://4.url.cn/zc/v3/img/info@2x.png" 2x);
+  padding: 0 0 0 24px;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 8px 0 8px;
+}
+
+.mainWrap .main form .password-tips-group .ok {
+  background-image: url(https://4.url.cn/zc/v3/img/green.png);
+  background-image: -webkit-image-set(url(https://4.url.cn/zc/v3/img/green.png) 1x, url(https://4.url.cn/zc/v3/img/green@2x.png) 2x);
+  background-image: image-set("https://4.url.cn/zc/v3/img/green.png" 1x, "https://4.url.cn/zc/v3/img/green@2x.png" 2x);
+}
+
+.mainWrap .main form #tel {
+  width: 438px;
+  height: 50px;
+  margin-top: 24px;
+  padding: 0 20px;
+  border: 1px solid #aaa;
+  color: #aaa;
+  border-radius: 4px;
+}
+
+.mainWrap .main form #tel:focus {
+  border-color: #549df8;
+}
+
+.mainWrap .main form .submit {
+  border: 1px #3083ff solid;
+  border-radius: 4px;
+  background-color: #3487ff;
+  box-shadow: 0 5px 8px 0 rgba(24, 95, 255, 0.1);
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+  background-image: linear-gradient(0deg, #398bff, #3083ff);
+  width: 478px;
+  height: 60px;
+  margin: 40px 0 8px;
+  font-size: 24px;
+  cursor: pointer;
+}

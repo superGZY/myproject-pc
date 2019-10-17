@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../styles/buycar.css" />
+    <script src="../static/scripts/require.js" data-main="../scripts/commen/buycar.js" type="text/javascript"
+        charset="utf-8"></script>
+</head>
+<body>
+    <!-- top-S -->
+	<div id="topWrap" class="toprelative">
+		<!-- topbar-S -->
+		<div id="topbar" class="container">
+			<a href="./index.html" target="_blank">
+				<div class="fl ico-topbar logol">聚诚品</div>
+			</a>
+			<div class="fl ico-topbar logor">可以触摸的欢乐时光</div>
+			<a href="buycar.html"  class="fr buycar">
+				<i class="fl buycar-ico ico-topbar"></i>
+				<span>购物车</span>
+				<div class="fr buycar-num">0</div>
+			</a>
+			<div class="loginbar fr">
+				<!-- 未登录状态 -->
+				<div class="unlogin" style="display:block">
+					<i class="ico-topbar i-person"></i>
+					<a href="javascript:void(0)" id="login">立即登录</a>
+				</div>
+				<!-- 登录状态 -->
+				<div class="login clearfix" style="display: none"> 
+					<i class="ico-topbar i-person"></i>
+					<a href="javascript:void(0)" id="login-log"></a>
+					<div class="top-hover" style="display: none">
+						<div class="arrow"></div>
+						<div class="link-list">
+							<a>
+								<i class="fl link-i1"></i>
+								<span>订单管理</span>
+							</a>
+							<a>
+								<i class="fl link-i2"></i>
+								<span>地址管理</span>
+							</a>
+							<a>
+								<i class="fl link-i3"></i>
+								<span>优惠卡券</span>
+							</a>
+							<a>
+								<i class="fl link-i4"></i>
+								<span>我的收藏</span>
+							</a>
+							<a>
+								<i class="fl link-i5"></i>
+								<span>订阅管理</span>
+							</a>
+							<a>
+								<i class="fl link-i6"></i>
+								<span>领取中心</span>
+							</a>
+							<a class="quit">
+								<i class="fl link-i7"></i>
+								<span>退出登录</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="searchbox fr">
+				<a href="" class="ico-topbar"></a>
+				<input placeholder="请输入想要查找的宝贝" />
+			</div>
+		</div>
+		<!-- topbar-E -->
+		<!-- topnav-S -->
+		<div id="topnavWrap">
+			<div class="container topnav-c">
+				<ul class="fl">
+					<li><a class="ico-topbar" href="index.html">首页</a></li>
+					<li><a class="ico-topbar" href="">限时折扣</a></li>
+					<li><a class="ico-topbar" href="">聚豆抵扣</a></li>
+					<li><a class="ico-topbar" href="">定制专区</a></li>
+					<li><a class="ico-topbar" href="">聚发现</a></li>
+				</ul>
+				<a class="fr" id="topmenu-goods">
+					<span>全部商品分类</span>
+					<i class="allgoods-down ico-topbar"></i>
+				</a>
+			</div>
+		</div>
+		<!-- top-meun-S -->
+		<div class="top-menu" style="display:none;">
+			<div class="allgoods-info container">
+				<ul class="allgoods-ul clearfix">
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- top-E -->
+	<!-- 内容区 -->
+	<div class="mainwrap">
+		<div class="mycart" id="blk_cart_list">
+			<div class="mycart-th clearfix">
+				<p class="fl sp-1">商品信息</p>
+				<p class="fl sp-2">单价（元）</p>
+				<p class="fl sp-3">数量</p>
+				<p class="fl sp-4">金额（元）</p>
+				<p class="fl sp-5">操作</p>
+			</div>
+			<div class="mycart-pack cartbox">
+				<div class="mycart-shop">
+					<span class="input-check cartcheck checked"><i></i></span>
+					<p class="mycart-shop-t">剑灵供应商：合泰文化</p>
+				</div>
+				<div class="mycart-list"></div>
+			</div>
+			<div class="mycart-tb clearfix">
+				<div class="mycart-tb-info">
+					<p>
+						已选商品
+						<b class="total">0</b>
+						件&nbsp;&nbsp;总价：
+						<b class="money">0元</b>
+					</p>
+					<p class="b">不含运费和其他优惠</p>
+				</div>
+				<a class="mycart-tb-btn" href="index.html">去结算</a>
+			</div>
+		</div>
+	</div>
+    <!-- footer-S -->
+	<div class="footer">
+		<div class="container">
+			<a href="" class="footer-logo"><img src="../static/images/djc_logo.png" /></a>
+			<ul class="footer-infol fl">
+				<li><a><span class="commtop"></span>购物指南</a></li>
+				<li><a><span class="commtop"></span>常见操作</a></li>
+				<li><a><span class="commtop"></span>关于我们</a></li>
+				<li><a><span class="commtop"></span>配送方式</a></li>
+				<li><a><span class="commtop"></span>售后服务</a></li>
+			</ul>
+			<ul class="footer-infor fl">
+				<li>
+					<img src="../static/images/djc_gzh.jpg" />
+					<p>聚诚品公众号</p>
+				</li>
+				<li>
+					<img src="../static/images/djc_gzh.jpg" />
+					<p>聚诚品公众号</p>
+				</li>
+				<li class="last-wx">
+					<img src="../static/images/djc_gzh.jpg" />
+					<p>聚诚品公众号</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-bot">
+		<p>
+			<a href="">腾讯互动娱乐</a>
+			|
+			<a href="">服务条款</a>
+			|
+			<a href="">腾讯游戏隐私保护指引</a>
+			|
+			<a href="">广告服务</a>
+			|
+			<a href="">腾讯游戏招聘</a>
+			|
+			<a href="">腾讯游戏客服</a>
+			|
+			<a href="">游戏地图</a>
+			|
+			<a href="">成长守护平台</a>
+			|
+			<a href="">商务合作</a>
+			|
+			<a href="">网站导航</a>
+		</p>
+		<p>COPYRIGHT © 1998 – 2019 TENCENT. ALL RIGHTS RESERVED.</p>
+		<p><a href="">腾讯公司 版权所有</a></p>
+	</div>
+</body>
+</html>

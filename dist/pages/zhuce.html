@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="../styles/zhuce.css" rel="stylesheet" type="text/css"/>
+    <script src="../static/scripts/require.js" data-main="../scripts/commen/zhuce.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <a href="./index.html" class="logo">QQ</a>
+    <div class="side"></div>
+    <div class="mainWrap">
+        <div class="main">
+            <div class="form">
+                <div>
+                    <div class="welcome">欢迎注册QQ</div>
+                    <div class="free-entry">免费靓号</div>
+                    <div class="header">每一天，乐在沟通。</div>
+                </div>
+                <form autocomplete="off">
+                    <input type="text" id="name" placeholder="昵称" required/>
+                    <div class="error-tips" style="display: none"></div>
+                    <input type="password" id="pwd" placeholder="密码" required/>
+                    <div class="password-tips-group " style="display: none">
+                        <div class="password-tips ok">不能包含空格</div>
+                        <div class="password-tips">长度为8-16个字符</div>
+                        <div class="password-tips">必须包含字母、数字、符号中至少2种</div>
+                    </div>
+                    <div class="error-tips" style="display: none"></div>
+                    <input type="text" id="tel" placeholder="手机号码" required/>
+                    <div class="error-tips" style="display: none">手机号有误</div>
+                    <input type="submit" class="submit" value="立即注册" onclick="copyText()"/>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function copyText(){
+            var name = document.getElementById("name").value;
+            var pwd = document.getElementById("pwd").value;
+            localStorage.setItem('username',name);
+            localStorage.setItem('password',pwd);
+            //window.open("http://localhost:8000/pages/index.html");
+            window.close();
+        }
+    </script>
+</body>
+</html>

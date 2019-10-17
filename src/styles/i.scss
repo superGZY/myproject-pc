@@ -1,0 +1,57 @@
+@import "mixins";
+
+
+//定义变量，可以带单位
+$val: 120px;
+$dir: top;
+
+.box {
+	font-size: $val/2;   //变量可以直接进行计算
+	border-#{$dir} : $val;  //可以使用 #{变量} 的方式拼接字符串
+	margin-#{$dir} : $val;
+}
+
+// %表示占位符， center-block不会出现在css文件中
+%center-block {  
+	position: absolute;
+	left: 0; right: 0; top: 0; bottom: 0;
+	margin: auto;
+}
+
+//定义一个多值变量
+$props: 10px 20px 30px;
+
+.page {
+  width: nth($props, 1);  //使用 nth方法取出多值变量的内容
+  height: nth($props, 2);
+}
+
+/*可以写注释，但是生成CSS的时候，单行注释不会出现*/
+.container {
+	.row {
+		.col {
+			position: relative;
+			.item {
+				//使用继承语法，将center-block的样式继承过来
+				@extend %center-block;
+				height: 200px;
+				background: salmon;
+				ul {
+					//调用混合函数，将代码混合到这个地方
+					@include opacity(80);
+					li {
+						a {
+							text-decoration: none;
+							color: black;
+							// & 表示当前选择器， 这里就是 a 标签
+							&:hover {
+								color:red;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
